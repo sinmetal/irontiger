@@ -14,6 +14,14 @@
 
 package org.sinmetal.common;
 
+import java.io.IOException;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import javax.servlet.http.HttpServletResponse;
+
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.services.bigquery.Bigquery;
@@ -40,14 +48,6 @@ import com.google.cloud.dataflow.sdk.util.MonitoringUtil;
 import com.google.cloud.dataflow.sdk.util.Transport;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-
-import java.io.IOException;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * The utility class that sets up and tears down external resources, starts the Google Cloud Pub/Sub

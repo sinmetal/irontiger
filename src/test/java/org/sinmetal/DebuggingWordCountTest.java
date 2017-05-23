@@ -16,7 +16,8 @@
 
 package org.sinmetal;
 
-import com.google.common.io.Files;
+import java.io.File;
+import java.nio.charset.StandardCharsets;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -24,8 +25,7 @@ import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.io.File;
-import java.nio.charset.StandardCharsets;
+import com.google.common.io.Files;
 
 /**
  * Tests for {@link DebuggingWordCount}.

@@ -16,6 +16,9 @@
 
 package org.sinmetal.common;
 
+import java.io.IOException;
+import java.util.Arrays;
+
 import com.google.api.services.pubsub.Pubsub;
 import com.google.api.services.pubsub.model.PublishRequest;
 import com.google.api.services.pubsub.model.PubsubMessage;
@@ -30,9 +33,6 @@ import com.google.cloud.dataflow.sdk.transforms.DoFn;
 import com.google.cloud.dataflow.sdk.transforms.IntraBundleParallelization;
 import com.google.cloud.dataflow.sdk.util.Transport;
 import com.google.common.collect.ImmutableMap;
-
-import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * A batch Dataflow pipeline for injecting a set of GCS files into
